@@ -29,8 +29,9 @@ ALLOWED_HOSTS = ["tidycow.pythonanywhere.com"]
 
 CSRF_TRUSTED_ORIGINS = ["https://tidycow.pythonanywhere.com"]
 
+# Static files
 STATIC_URL = "/static/"
-STATIC_ROOT = "/home/tidycow/static"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 # Application definition
