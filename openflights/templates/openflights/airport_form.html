@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Airport (Form)</title>
+  </head>
+  <body>
+    <h1>Create Airport (Django Form)</h1>
+
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Create</button>
+    </form>
+
+    <p><a href="/">Back to main page</a></p>
+  </body>
+</html>
