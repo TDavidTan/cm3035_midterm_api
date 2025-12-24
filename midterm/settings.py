@@ -25,18 +25,12 @@ SECRET_KEY = "django-insecure-fz03f_4iqrrx4qc#mw-8d1uinlhm$vno8ly*&gfgs2m#()a+(n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    "tidycow.pythonanywhere.com",
-    "127.0.0.1",
-    "localhost",
-]
+ALLOWED_HOSTS = ["tidycow.pythonanywhere.com"]
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://tidycow.pythonanywhere.com",
-]
+CSRF_TRUSTED_ORIGINS = ["https://tidycow.pythonanywhere.com"]
 
-STATIC_URL = "static/"
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_URL = "/static/"
+STATIC_ROOT = "/home/tidycow/static"
 
 
 # Application definition
